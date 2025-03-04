@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="styles/navigation.css"/>
+    <link rel="stylesheet" href="styles/login.css"/>
+    
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="scripts/supabase.js"></script>
+<script src="scripts/login-register.js"></script>
+
+   
+
+    <title>Kalóriabázis</title>
+  </head>
+  <body>
+    <header class="header"> 
+      <nav class="navbar">
+        <ul>
+          <li class="navbar-item">
+            <a href="index.html" class="nav-link home">
+              <img src="/assets/images/logo.JPG" alt="Kalóriasegéd logó"/>
+              <span>Kalóriasegéd</span>    
+            </a>
+        </li>
+            
+        <li class="navbar-item">
+          <a href="target.html" class="nav-link">
+             Célok
+          </a>
+        <li class="navbar-item">
+            <a href="recept.html" class="nav-link">
+               Ételek
+            </a>
+        </li>
+        <li class="navbar-item">
+            <a href="statics.html" class="nav-link">
+              Étkezési statisztikák
+            </a>
+                
+        <li class="navbar-item">
+          <a href="caloria.html" class="nav-link">
+              Kalóriaszámláló
+          </a>
+        </li>
+        <li class="navbar-item">
+            <a href="sport.html" class="nav-link">
+             Sport
+            </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="profil.html" class="nav-link">
+           Profil
+          </a>
+      </li>
+      <li class="navbar-item">
+        <a href="login.html" class="nav-link">
+         Csatlakozás
+        </a>
+    </li>
+        </ul>
+        <div class="hamburgur">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <title>Kalóriabázis regisztráció</title>
+      
+      <body>
+        <section class="forms-section">
+            <div class="forms">
+              <div class="form-wrapper is-active">
+                <button type="button" class="switcher switcher-login">
+                  Belépés
+                  <span class="underline"></span>
+                </button>
+                <form class="form form-login">
+                  <fieldset>
+                    <legend>Kérem adja meg az e-mail címét és jelszavát</legend>
+                    <div class="input-block">
+                      <label for="login-email">E-mail</label>
+                      <input id="login-email" type="email" required>
+                    </div>
+                    <div class="input-block">
+                      <label for="login-password">Jelszó</label>
+                      <input id="login-password" type="password" required>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn-login">Belépés</button>
+                </form>
+              </div>
+              <div class="form-wrapper">
+                <button type="button" class="switcher switcher-signup">
+                  Regisztráció
+                  <span class="underline"></span>
+                </button>
+                <form class="form form-signup">
+                  <fieldset>
+                    <legend>Kérem adja meg az e-mail címét, jelszót, jelszót újra.</legend>
+                    <div class="input-block">
+                      <label for="signup-email">E-mail</label>
+                      <input id="signup-email" type="email" required>
+                    </div>
+                    <div class="input-block">
+                      <label for="signup-password">Jelszó</label>
+                      <input id="signup-password" type="password" required>
+                    </div>
+                    <div class="input-block">
+                      <label for="signup-password-confirm">Jelszó újra</label>
+                      <input id="signup-password-confirm" type="password" required>
+                    </div>
+                  </fieldset>
+                  <button type="submit" class="btn-signup">Regisztráció</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          
+          
+      </body>
+      <script src="scripts/login.js"></script>
+      <script src="scripts/script.js"></script>
+     </main>
+     </body>
+</html>

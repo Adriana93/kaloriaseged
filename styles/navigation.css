@@ -1,0 +1,88 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+/*// Alapértelmezett: Asztali nézet
+.navbar {
+  display: flex; // Asztali menü megjelenítése
+}
+
+.hamburger {
+  display: none; // Mobil menü elrejtése
+}
+
+// Mobil nézet (600px alatti képernyők) beállításai
+@media only screen and (max-width: 850px) {
+  .navbar {
+    display: none !important; // Asztali menü elrejtése mobil nézetben
+  }
+.navbar{
+   background-color: transparent !important;
+
+}
+  .hamburger {
+    display: block !important; // Mobil menü megjelenítése mobil nézetben
+
+  }
+}*/
+.header {
+  background-color: #151912;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.5rem;
+}
+.header img {
+  width: 3rem;
+  height: 3rem;
+}
+.header .navbar {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+}
+.header .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border: 1.5px solod rgba(255, 255, 255, 0.18);
+}
+.header .navbar ul .navbar-item {
+  list-style: none;
+}
+.header .navbar ul .navbar-item .nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.header .navbar ul .navbar-item .nav-link:hover {
+  background-color: #27ae60;
+  color: white;
+}
+.header .navbar ul .navbar-item .nav-link.active {
+  background-color: #2ecc71;
+  color: white;
+}
+.header .navbar ul .navbar-item .home {
+  display: flex;
+  align-items: center;
+  color: #f1c40f;
+}/*# sourceMappingURL=navigation.css.map */

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="styles/recept.css" />
+    <link rel="stylesheet" href="styles/navigation.css"/>
+    <link rel="stylesheet" href="styles/font.css"/>
+
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <title>Kalóriasegéd</title>
+    <link rel="Icon" type="jpg" href="assets/images/logo.JPG">
+</head>
+<body>
+    <header class="header"> 
+        <nav class="navbar">
+          <ul>
+            <li class="navbar-item">
+              <a href="index.html" class="nav-link home">
+                <img src="/assets/images/logo.JPG" alt="Kalóriasegéd logó"/>
+                <span>Kalóriasegéd</span>    
+              </a>
+          </li>
+              
+          <li class="navbar-item">
+            <a href="target.html" class="nav-link">
+               Célok
+            </a>
+          <li class="navbar-item">
+              <a href="recept.html" class="nav-link">
+                 Ételek
+              </a>
+          </li>
+          <li class="navbar-item">
+              <a href="statics.html" class="nav-link">
+                Étkezési statisztikák
+              </a>
+                  
+          <li class="navbar-item">
+            <a href="caloria.html" class="nav-link">
+                Kalóriaszámláló
+            </a>
+          </li>
+          <li class="navbar-item">
+              <a href="sport.html" class="nav-link">
+               Sport
+              </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="profil.html" class="nav-link">
+             Profil
+            </a>
+        </li>
+        <li class="navbar-item">
+          <a href="login.html" class="nav-link">
+           Csatlakozás
+          </a>
+      </li>
+          </ul>
+          <div class="hamburgur">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </nav>  
+      </header>
+
+
+<section class="section-2">
+    <div class="section-2-div">
+          <div class="wrapper">
+              <h1>Ételek
+              </h1>
+              <div class="profiling-container">
+                  <div class="question question1">
+                      <p>Válassz az alábbiak közül</p>
+                      <select name="main" id="main">
+                          <option value="beef">Beef</option>
+                          <option value="chicken">Chicken</option>
+                          <option value="duck">Duck</option>
+                          <option value="lamb">Lamb</option>
+                          <option value="seafood">Seafood</option>
+                          <option value="turkey">Turkey</option>
+                          <option value="vegan">Vegan</option>
+                          <option value="fish">Fish</option>
+      
+                      </select>
+                  </div>
+                  <div class="question question2">
+                      <p>Please select diet type</p>
+                      <select name="diet" id="diet">
+                          <option value="high-protein">High Protein</option>
+                          <option value="low-fat">Low Fat</option>
+                          <option value="low-carb">Low Carb</option>
+                          <option value="high-fibre">High Fibre</option>
+                          <option value="balanced">Balanced</option>
+                      </select>
+                  </div>
+      
+                  <div class="question question3">
+                      <p>Please select desired preference </p>
+                      <select name="heath" id="health">
+                          <option value="alcohol-free">None</option>
+                          <option value="sugar-conscious">Sugar-Conscious</option>
+                          <option value="alcohol-free" selected>Alcohol-Free</option>
+                          <option value="peanut-free">Peanut-Free</option>
+                          <option value="tree-nut-free">Tree-Nut-Free</option>
+                          <option value="vegetarian">Vegetarian</option>
+                      </select>
+                  </div>
+                  <!-- <div class="question question4">
+                      <p>Total cooking and prep time</p>
+                      <select name="time" id="time">
+                          <option value="20-">Less than 20mins</option>
+                          <option value="30%2D">Less than 30mins</option>
+                          <option value="45%2D">Less than 45mins</option>
+                          <option value="60%2D">Less than 60mins</option>
+                      </select>
+                  </div> -->
+              </div>
+              <div class="submit-button">
+                  <input type="button" value="Submit">
+              </div>
+          </div>
+          <div class="display">
+              <div class="result-container">
+                  <ul class="ingredients">
+                  </ul>
+              </div>
+          </div>
+          <script src="main.js"></script>
+      </body>
+      
+      </html>
+         
+</section>
+
+
+
+
+<section class="section-4">
+    <h3>Prémium funkciók</h3>
+    <span>Mentsd el az étkezéseidet és kövess nyomon a részletes statisztikákkal!  </span>
+    <input type="button"value="Váltás prémiumra"/>
+    
+
+</body>
+<script src="/scripts/recept.js"></script>
+<script src="/scripts/script.js"></script>
+
+</html>

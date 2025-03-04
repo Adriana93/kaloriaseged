@@ -1,0 +1,318 @@
+
+
+.website-bg {
+  background-color: #eae2b7;
+}
+    /* Global styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #E9C46A;
+      border-radius: 10px; /* Round edges */
+    }
+
+    /* Logo styling */
+    .logo {
+      color: #219ebc;
+      font-family: 'Acme', sans-serif; /* Ensure fallback font */
+      font-size: 25px;
+      text-decoration: none;
+      margin-right: 20px; /* Add spacing after logo */
+    }
+
+    /* Navigation links */
+    .nav-links {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px; /* Round corners for links */
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .nav-links a:hover {
+      background-color: #F4A261; /* Lighter hover effect */
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #E9C46A; /* Match navbar background */
+      min-width: 150px; /* Set minimum dropdown width */
+      border-radius: 5px; /* Round corners for dropdown */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Subtle shadow */
+      z-index: 1; /* Ensure dropdown stays on top */
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;} /* Lighter hover effect for dropdown items */
+
+
+    /* Video container */
+    .video-container {
+      position: relative; /* Video positioned relative to viewport */
+      width: 100%; 
+      height: 100vh; /* Adjust height as needed (not full screen) */
+      overflow: hidden; /* Hide overflow for video content */
+    }
+
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Optional content over video (adjust opacity for visibility) */
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center content */
+      color: white;
+      text-align: center;
+      opacity: 1.0; /* Adjust as needed */
+    }
+  .hero-content a {  /* Style the "Let's Go" button */
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Indicate clickable button */
+  }
+
+    /* Content after video section (add your main content here) */
+    .main-content {
+      padding: 30px; /* Add some padding for main content */
+    }
+
+
+.hero-content a:hover {
+  animation: button-hover 0.5s ease-in-out; /* Animation name, duration, and easing */
+  background-color: #3e8e41; /* Slightly darker green on hover */
+}
+
+@keyframes button-hover {
+  from {
+    transform: scale(1);
+    background-color: #4CAF50; /* Green color */
+  }
+  to {
+    transform: scale(1.1);
+    background-color: #3e8e41; /* Darker green */
+  }
+}
+
+
+
+/*----- Base Styles -----*/
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*----- Search Container -----*/
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.search-container input {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex: 1; /* Allow input to grow to fill most of container */
+  margin-right: 1rem;
+}
+
+.search-container button {
+  padding: 1rem;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*----- Nutrition Results Card -----*/
+#nutritionResults {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  max-width: 500px; /* Limit card width */
+}
+
+#nutritionResults h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/*----- Additional Styling (Optional) -----*/
+/* You can add more styles here to customize the card further, 
+  such as styling specific nutritional information sections. */
+
+
+
+
+#search-result {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  margin: 20px;
+}
+
+.recipe-card {
+  margin: 10px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px; /* Adjust card width as needed */
+  animation: slide-in 0.5s ease-in-out forwards; /* Add slide-in animation */
+}
+
+.recipe-card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.recipe-card img {
+  max-width: 100%;
+  border-radius: 5px; /* Match card border radius */
+}
+
+.recipe-card p {
+  margin-top: 10px;
+}
+
+.view-recipe-button {
+  display: block;
+  margin: 0 auto; /* Center button horizontally */
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+      
+ 
+bmi {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #E76F51;
+}
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+    font-size: 16px; /* Text size */
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover for feedback */
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculator-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 2
+}
+

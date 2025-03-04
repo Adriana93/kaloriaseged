@@ -1,0 +1,314 @@
+$bg-color : #FFF6F7;
+$font-family-main: 'Times New Roman';
+$bg-color-yellow: #f1c40f;
+$bg-color-green: #2ecc71;
+$bg-color-black: #151912;
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+    
+
+html{
+    box-sizing: inherit;
+    overflow-x: hidden;
+  //  background-color: $color5;
+ // width: 100%;
+
+}
+.section-1{
+ background-color: $bg-color-green;
+//width: 100%;
+height: 100vh;
+
+//overlay réteg
+/*&::before {
+    content: '';               // Üres tartalom a pseudo-elementhez
+    position: absolute;        // Az overlay a szülőhöz igazodik
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); // Átlátszó fekete réteg (50% átlátszóság)
+    z-index: 1; 
+}*/
+    .section-1-div{
+
+ 
+       margin-top:5rem;
+       margin-left: 3.5rem;    
+       justify-content: center;      
+       height: auto;
+       font-size: 5.5rem;
+          
+       h1 {
+        color:$bg-color;
+        text-align: center; /* Az egész h1 alapértelmezetten balra igazított */
+        margin:0;
+        padding:0;
+        line-height: 1;
+      }
+      
+      .first-line {
+        display: inline; /* Biztosítja, hogy külön sor legyen */
+        text-align: center; /* Első sor középre igazítása */
+        justify-content: center;
+        line-height:3;
+        margin: 0;
+      }
+      
+      .second-line {
+        display: inline; /* Második sor is külön blokk */
+        text-align: left; /* Maradjon balra igazítva */
+        margin:0;
+      }
+ h3{
+    color: $bg-color;
+    text-align: center;
+    font-size: 4rem;
+    margin:2rem;
+ }
+
+ br {
+  line-height: 0; /* Eltávolítja a br okozta extra sortávolságot */
+}
+
+.button {
+  background-color: $bg-color-yellow;
+  width: 15rem;
+  height: 5rem;
+  font-size: large;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  color:$bg-color;
+  margin-left:40%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+}
+.button:active {
+  transform: scale(1.2) translateY(-10px); /* Növeli a méretet és felfelé mozgatja */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Dobozárnyék hozzáadása */
+}
+.button:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+}
+}
+
+.section-2{
+   width: 90%;
+  height: 28rem;
+  display: flex;
+  position: relative;     
+ // margin-left: 4.1rem;
+  top:3rem;
+  justify-content: center;
+
+  h2{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+     // margin-left: 30rem;
+      animation: fadeInMove 3s ease-in-out infinite;
+      font-size: 4rem !important;
+      
+.animated-text {
+  font-size: 24px;
+  color: black;
+  animation: fadeInMove 3s ease-in-out infinite;
+}
+
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+  }
+
+  .container{
+      display: flex;
+      position: relative;      
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 22rem;
+      margin-left: 2rem;
+      top:5rem;
+      justify-content: space-between;
+      max-width: 1200px;
+
+      .us{
+        font-weight: bolder;
+        font-size: 2rem;
+      }
+    }
+
+}
+
+.section-3{
+  background-color: $bg-color-black;
+  color: $bg-color;
+  width: 100%;
+  color:$bg-color;
+  text-align: center;
+  padding: 5rem;
+  min-height: 70rem; /* Legalább egy teljes képernyőnyi magasság */
+  height: auto; /* A tartalomhoz igazodik */
+  flex-direction: column; /* Tartalom oszlopban rendezve */
+  justify-content: center; /* Tartalom középre igazítása */
+  
+ 
+  
+
+  .section-3-div{
+    width: 80%; /* Szélesség beállítása */
+    margin: auto; /* Középre helyezés */
+    h2{
+      font-size: 4rem !important;
+    }
+    .rolunk-szoveg{
+      width: 60%; /* Az olvashatóság érdekében korlátozott szélesség */
+     margin: 0 auto; /* Középre igazítás */
+      text-align: justify; /* Sorkizárt szöveg */
+      line-height: 1.6; /* Sorok közötti távolság */
+      max-height: 16em; /* Kb. 10 sorra korlátozott magasság (sorok méretétől függően) */
+      text-indent: 2rem; /* Első sor behúzása */
+      padding-left: 1rem; /* Bal oldali behúzás az egész szövegnek */
+     font-size: 2rem;
+      color:$bg-color-green;
+
+      height: auto; /* Növekedés engedése */
+      max-height: none; /* Eltávolítja a 16em-es korlátozást */
+    display: flex; /* Ha kell, hogy tartalma igazodjon */
+    flex-direction: column; /* Oszlopirányú elrendezés */
+    align-items: center; /* Középre igazítás */
+    animation: typing 2s steps(20);
+    }
+@keyframes typing {
+  from{
+    width: 0ch;
+  }
+}
+  }
+}
+
+.section-4{
+  background-color: $bg-color-green;
+  width: 100%;
+  height: 30rem;
+  color:$bg-color;
+  text-align: center;
+  padding: 5rem;
+  
+  
+  h2{
+    font-size: 4rem !important;
+  }
+
+  .section-4-div{
+    background-color: $bg-color;
+    width: 50rem;
+    height: 12rem;
+    align-items: center;
+    justify-content: center;
+    color: $bg-color-black;
+    margin-left:25%;
+    margin-top:3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1.5rem;
+
+    .szamlal-button{
+      background-color: $bg-color-yellow;
+      width: 40rem;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 3rem 1rem 3rem;
+      color: $bg-color;
+      margin-top: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      border-radius: 25px 25px 25px 25px;
+      cursor: pointer;
+    }
+
+    .szamlal-button::after {
+      content: "➔"; /* Nyíl szimbólum */
+      font-size: 1.2rem;
+      margin-left: 0.5rem; /* Hely a szöveg és a nyíl között */
+    }
+    
+    .szamlal-button:hover {
+      background-color: #e69500;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.section-5{
+  background-color: $bg-color-black;
+  color: $bg-color;
+  width: 100%;
+  height: 25rem;
+  
+  .section-5-div{
+    
+    h2{
+      padding-top: 3rem;
+      padding-left: 38%;
+      font-size: 4rem !important;
+    }
+
+    p{
+      padding-top: 2rem;
+      padding-left: 22%;
+      font-size: 2.5rem  !important;
+    }
+
+    .button{
+      background-color: $bg-color-yellow;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  color:$bg-color;
+  margin-left:40%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-top: 3rem;
+
+}
+.button:active {
+  transform: scale(1.2) translateY(-10px); /* Növeli a méretet és felfelé mozgatja */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Dobozárnyék hozzáadása */
+}
+.button:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+}
+
+    }
+  

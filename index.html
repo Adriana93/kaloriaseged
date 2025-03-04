@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/navigation.css"/>
+    <link rel="stylesheet" href="styles/font.css"/>
+    <link rel="stylesheet" href="styles/footer.css"/>
+
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <title>Kalóriasegéd</title>
+    <link rel="Icon" type="jpg" href="assets/images/logo.JPG">
+</head>
+<body>
+  <header class="header"> 
+    <nav class="navbar">
+      <ul>
+          <li class="navbar-item">
+              <a href="index.html" class="nav-link home">
+                <img src="/assets/images/logo.JPG" alt="Kalóriasegéd logó"/>
+                <span>Kalóriasegéd</span>    
+              </a>
+          </li>
+              
+          <li class="navbar-item">
+            <a href="target.html" class="nav-link">
+               Célok
+            </a>
+          <li class="navbar-item">
+              <a href="recept.html" class="nav-link">
+                 Ételek
+              </a>
+          </li>
+          <li class="navbar-item">
+              <a href="statics.html" class="nav-link">
+                Étkezési statisztikák
+              </a>
+                  
+          <li class="navbar-item">
+            <a href="caloria.html" class="nav-link">
+                Kalóriaszámláló
+            </a>
+          </li>
+          <li class="navbar-item">
+              <a href="sport.html" class="nav-link">
+               Sport
+              </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="profil.html" class="nav-link">
+             Profil
+            </a>
+        </li>
+        <li class="navbar-item">
+          <a href="login.html" class="nav-link">
+           Csatlakozás
+          </a>
+      </li>
+      </ul>
+      <div class="hamburgur" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+
+     
+  </nav>
+    <!--<nav class="menu">
+      <ol>
+        <li class="menu-item">
+          <a href="index.html#section_home" class="home">
+            <img src="/assets/images/logo.JPG" alt="Kalóriasegéd logó"/>
+           <span>Kalóriasegéd</span>            
+           
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="index.html#section-foods" class="food">
+            <span>Ételek</span>
+            <div class="dots"></div>
+          </a>
+          <ol class="sub-menu">
+            <li class="menu-item item--a"><a href="#myrecept" class="item--a"><span>Receptjeim</span></a></li>
+            <li class="menu-item item--b"><a href="#favouritefood" class="item--b"><span>Kedvenc étel</span></a></li>
+            <li class="menu-item item--b"><a href="newfood" class="item--c"><span>Új étel hozzáadása</span></a></li>
+            <li class="menu-item"><a href="#0" class="item--a"><span>Böngészés</span></a></li>
+            <li class="menu-item"><a href="#0" class="item--b"><span>Saját étkezés</span></a></li>
+            <li class="menu-item"><a href="#0" class="item--c"><span>Speciális étkezés</span></a></li>
+          </ol>
+        </li>
+        <li class="menu-item">
+          <a href="#0" class="meal">
+            <span>Étkezések</span>
+            <div class="dots"></div>
+          </a>
+          <ol class="sub-menu">
+            <li class="menu-item item--a"><a href="#0" class="item--a"><span>Napi étkezés</span></a></li>
+            <li class="menu-item item--b"><a href="#0" class="item--b"><span>Havi étkezés</span></a></li>
+            <li class="menu-item item--b"><a href="#0" class="item--c"><span>Étkezés tervezés</span></a></li>
+          </ol>
+        </li>  
+
+        <li class="menu-item">
+          <a href="#0" class="sport">
+            <span>Sport</span>
+          </a>
+          <ol class="sub-menu">
+            <li class="menu-item item--a"><a href="#0" class="item--a"><span>Sportjaim</span></a></li>
+            <li class="menu-item item--b"><a href="#0" class="item--b"><span>Edzéstervek</span></a></li>
+         </ol>
+        </li>
+        
+        <li class="menu-item">
+          <a href="#0" class="profil"> 
+            <span>Profil</span>
+          </a>
+          <ol class="sub-menu">
+            <li class="menu-item item--a"><a href="#myrecept" class="item--a"><span>Adatok és célok</span></a></li>
+            <li class="menu-item item--b"><a href="#favouritefood" class="item--b"><span>Beállítások</span></a></li>
+            <li class="menu-item item--b"><a href="newfood" class="item--c"><span>Előfizetések</span></a></li>
+          </ol>
+        </li>
+        
+        <li class="menu-item">
+          <a href="#0" class="event"> 
+            <span>Események</span>
+          </a>
+
+          <li class="menu-item">
+            <a href="login.html" class="event"> 
+              <span>Belépés</span>
+            </a>
+      </ol>
+    </nav>-->
+  </header>
+  
+  <section class="section-1">
+    <div class="section-1-div">
+      <h1><span class="first-line">Tartsd számon</span></br> 
+       <span class="second-line"></span> kalóriabeviteledet egyszerűen</span></h1>
+      <h3>Személyre szabott megoldás az egészséges életmódhoz</h3>
+      <input type="button" class="button" value="Kezdj hozzá most"/>
+    </div>
+    </section>
+
+    <section class="section-2">
+      <div class="section-2-div">
+        <h2>Céljaink</h2>
+        <div class="container">
+          <div class="row">  
+            <img src="/assets/images/cel.JPG" class="result" alt="result"/> </br>
+            <span class="us">Céljaink</br></span>
+            <span>Precíz kalóriaszámítás<br> minden étkezéshez</span></br>
+          </div>  
+          <div class="row">  
+            <img src="/assets/images/kovetes.JPG" class="kovetes" alt="kovetes"/></br>
+            <span class="us">Célok követése</br></span>
+            <span>Személyre szabott<br> célok és előrehaladás</span></br>
+          </div>
+          <div class="row">
+            <img src="/assets/images/kozosseg.JPG" class="kozosseg" alt="kozosseg"/></br>
+            <span class="us">Közösség</br></span>
+            <span>Csatlakozz<br> az egészségtudatos<br> közösséghez</span></br>
+          </div>
+         
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="section-3-div">
+        <h2>Rólunk</h2>
+        <div class="rolunk-szoveg">
+        Az egészséges életmód és a tudatos táplálkozás iránti szenvedélyem több éve meghatározza mindennapjaimat. Hosszú idő óta foglalkozom sportolással és kalóriaszámlálással, amely során rengeteg tapasztalatot szereztem a különböző étrendek, tápanyagarányok és egyéni szükségletek terén. Az évek során megtanultam, hogy nincs univerzális étrend, hiszen minden ember más: eltérő anyagcserével, életvitellel, célokkal és esetleges egészségügyi korlátokkal rendelkezik.
+
+          Éppen ezért kiemelten fontos számomra, hogy a tanácsadás és az útmutatás személyre szabott legyen.</br > Figyelembe veszem az egyéni adottságokat, például az ételallergiákat, az intoleranciákat, a krónikus betegségeket vagy éppen a különböző életmódbeli sajátosságokat. Legyen szó súlycsökkentésről, izomtömeg-növelésről vagy egyszerűen az egészségesebb étkezési szokások kialakításáról, a célom az, hogy mindenki megtalálja a számára legmegfelelőbb megoldást.
+          
+          A Kalóriasegéd célja, hogy megkönnyítse a mindennapokat a kalóriaszámlálásban és az egészségtudatos döntések meghozatalában. Hiszem, hogy az egészség nem csupán a számokról szól, hanem arról is, hogy jól érezzük magunkat a saját bőrünkben, és fenntartható módon éljünk kiegyensúlyozott életet.
+      </div>
+    </div>
+    </section>
+
+    <section class="section-4">
+      <h2>Kalóriaszámlaló</h2>
+      <div class="section-4-div">
+          Próbáld ki kalóriaszámlálónkat és követd nyomon napi beviteled!
+          <button class="szamlal-button">
+            Kalóriaszámlaló megnyitása</button>
+      </div>
+    </section>
+
+    <section class="section-5">
+      <div class="section-5-div">
+      <h2>Csatlakozz most</h2>
+      <p>Kezdd el használni a Kalóriasegédet még ma, és érd el céljaidat! </p>
+      <input type="button" class="button" value="Ingyenes regisztráció"/>
+    </div>
+    </section>
+ <!--footer-starts-from-here-->
+ <footer class="footer">
+  <div class="footer-col">
+    <h3>Rólunk</h3>
+    <a href="#">BMI Kalkulátor</a>
+    <a href="#">Rólam</a>
+    <a href="contact.html">Kapcsolat felvételi űrlap</a>
+  </div>
+  <div class="footer-col">
+    <h3>Közösségi média</h3>
+    <div class="social-links">
+      <a href="https://www.facebook.com/">Facebook<i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?_escaped_fragment_=/twitter">Twitter<i class="fa fa-twitter"></i></a> <a href="https://www.instagram.com/">Instagram<i class="fa fa-instagram"></i></a> <a href="https://www.linkedin.com/">Linkedin<i class="fa fa-linkedin"></i></a> <a href="https://www.discord.com/">Discord<i class="fa fa-discord"></i></a> </div>
+  </div>
+  <div class="footer-col">
+    <h3>Kapcsolat</h3>
+    <div class="contact-details">
+      <p>Email: kaloriaseged@gmail.com</p>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="kereés az oldalon">
+    </div>
+  </div>
+</footer>
+</body>
+<script src="/scripts/script.js"></script>
+</html>

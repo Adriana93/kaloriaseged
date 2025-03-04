@@ -1,0 +1,266 @@
+@charset "UTF-8";
+:root {
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  overflow-x: hidden;
+}
+
+.section-1 {
+  background-color: #2ecc71;
+  height: 100vh;
+  /*&::before {
+      content: '';               // Üres tartalom a pseudo-elementhez
+      position: absolute;        // Az overlay a szülőhöz igazodik
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); // Átlátszó fekete réteg (50% átlátszóság)
+      z-index: 1; 
+  }*/
+}
+.section-1 .section-1-div {
+  margin-top: 5rem;
+  margin-left: 3.5rem;
+  justify-content: center;
+  height: auto;
+  font-size: 5.5rem;
+}
+.section-1 .section-1-div h1 {
+  color: #FFF6F7;
+  text-align: center; /* Az egész h1 alapértelmezetten balra igazított */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.section-1 .section-1-div .first-line {
+  display: inline; /* Biztosítja, hogy külön sor legyen */
+  text-align: center; /* Első sor középre igazítása */
+  justify-content: center;
+  line-height: 3;
+  margin: 0;
+}
+.section-1 .section-1-div .second-line {
+  display: inline; /* Második sor is külön blokk */
+  text-align: left; /* Maradjon balra igazítva */
+  margin: 0;
+}
+.section-1 .section-1-div h3 {
+  color: #FFF6F7;
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem;
+}
+.section-1 .section-1-div br {
+  line-height: 0; /* Eltávolítja a br okozta extra sortávolságot */
+}
+.section-1 .section-1-div .button {
+  background-color: #f1c40f;
+  width: 15rem;
+  height: 5rem;
+  font-size: large;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  color: #FFF6F7;
+  margin-left: 40%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.section-1 .section-1-div .button:active {
+  transform: scale(1.2) translateY(-10px); /* Növeli a méretet és felfelé mozgatja */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Dobozárnyék hozzáadása */
+}
+.section-1 .section-1-div .button:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+
+.section-2 {
+  width: 90%;
+  height: 28rem;
+  display: flex;
+  position: relative;
+  top: 3rem;
+  justify-content: center;
+}
+.section-2 h2 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInMove 3s ease-in-out infinite;
+  font-size: 4rem !important;
+}
+.section-2 h2 .animated-text {
+  font-size: 24px;
+  color: black;
+  animation: fadeInMove 3s ease-in-out infinite;
+}
+@keyframes fadeInMove {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+.section-2 .container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 22rem;
+  margin-left: 2rem;
+  top: 5rem;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.section-2 .container .us {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.section-3 {
+  background-color: #151912;
+  color: #FFF6F7;
+  width: 100%;
+  color: #FFF6F7;
+  text-align: center;
+  padding: 5rem;
+  min-height: 70rem; /* Legalább egy teljes képernyőnyi magasság */
+  height: auto; /* A tartalomhoz igazodik */
+  flex-direction: column; /* Tartalom oszlopban rendezve */
+  justify-content: center; /* Tartalom középre igazítása */
+}
+.section-3 .section-3-div {
+  width: 80%; /* Szélesség beállítása */
+  margin: auto; /* Középre helyezés */
+}
+.section-3 .section-3-div h2 {
+  font-size: 4rem !important;
+}
+.section-3 .section-3-div .rolunk-szoveg {
+  width: 60%; /* Az olvashatóság érdekében korlátozott szélesség */
+  margin: 0 auto; /* Középre igazítás */
+  text-align: justify; /* Sorkizárt szöveg */
+  line-height: 1.6; /* Sorok közötti távolság */
+  max-height: 16em; /* Kb. 10 sorra korlátozott magasság (sorok méretétől függően) */
+  text-indent: 2rem; /* Első sor behúzása */
+  padding-left: 1rem; /* Bal oldali behúzás az egész szövegnek */
+  font-size: 2rem;
+  color: #2ecc71;
+  height: auto; /* Növekedés engedése */
+  max-height: none; /* Eltávolítja a 16em-es korlátozást */
+  display: flex; /* Ha kell, hogy tartalma igazodjon */
+  flex-direction: column; /* Oszlopirányú elrendezés */
+  align-items: center; /* Középre igazítás */
+  animation: typing 2s steps(20);
+}
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+}
+
+.section-4 {
+  background-color: #2ecc71;
+  width: 100%;
+  height: 30rem;
+  color: #FFF6F7;
+  text-align: center;
+  padding: 5rem;
+}
+.section-4 h2 {
+  font-size: 4rem !important;
+}
+.section-4 .section-4-div {
+  background-color: #FFF6F7;
+  width: 50rem;
+  height: 12rem;
+  align-items: center;
+  justify-content: center;
+  color: #151912;
+  margin-left: 25%;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 1.5rem;
+}
+.section-4 .section-4-div .szamlal-button {
+  background-color: #f1c40f;
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem 1rem 3rem;
+  color: #FFF6F7;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 25px 25px 25px 25px;
+  cursor: pointer;
+}
+.section-4 .section-4-div .szamlal-button::after {
+  content: "➔"; /* Nyíl szimbólum */
+  font-size: 1.2rem;
+  margin-left: 0.5rem; /* Hely a szöveg és a nyíl között */
+}
+.section-4 .section-4-div .szamlal-button:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+
+.section-5 {
+  background-color: #151912;
+  color: #FFF6F7;
+  width: 100%;
+  height: 25rem;
+}
+.section-5 .section-5-div h2 {
+  padding-top: 3rem;
+  padding-left: 38%;
+  font-size: 4rem !important;
+}
+.section-5 .section-5-div p {
+  padding-top: 2rem;
+  padding-left: 22%;
+  font-size: 2.5rem !important;
+}
+.section-5 .section-5-div .button {
+  background-color: #f1c40f;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  color: #FFF6F7;
+  margin-left: 40%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.section-5 .section-5-div .button:active {
+  transform: scale(1.2) translateY(-10px); /* Növeli a méretet és felfelé mozgatja */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Dobozárnyék hozzáadása */
+}
+.section-5 .section-5-div .button:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}/*# sourceMappingURL=styles.css.map */

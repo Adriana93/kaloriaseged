@@ -1,0 +1,85 @@
+$primary-color: #ff7f00;
+$background-color: #1a1a1a;
+$text-color: #ffffff;
+$inactive-color: #444;
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .tab-btn {
+        background: $inactive-color;
+        border: none;
+        padding: 10px 20px;
+        color: $text-color;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &.active {
+            background: $primary-color;
+        }
+    }
+}
+
+.content {
+    display: none;
+    background: #222;
+    padding: 20px;
+    border-radius: 5px;
+
+    &.active {
+        display: block;
+    }
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        flex: 1;
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid #555;
+        background: #111;
+        color: $text-color;
+        border-radius: 5px;
+    }
+}
+
+button {
+    background: $primary-color;
+    border: none;
+    padding: 10px;
+    color: $text-color;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover {
+        background: darken($primary-color, 10%);
+    }
+}

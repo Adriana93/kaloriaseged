@@ -1,0 +1,248 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+html, body {
+  /*  overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;*/
+}
+
+.section-1 {
+  background-color: #FFF6F7;
+}
+.section-1 .section-1-div .button {
+  display: flex;
+  background-color: #2ecc71;
+  width: 25rem;
+  height: 5rem;
+  color: #FFF6F7;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  margin-left: 75%;
+  margin-top: 5rem;
+  border-style: none;
+}
+.section-1 .section-1-div h1 {
+  font-size: 10rem;
+  margin-left: 30%;
+}
+.section-1 .section-1-div .card-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* .card_title {
+    text-align: center;
+    border-radius: 0px 0px 40px 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: -80px;
+    height: 40px;
+
+  }*/
+}
+.section-1 .section-1-div .card-list .card {
+  margin: 30px auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: #e2e1e1;
+  text-align: center;
+  font-size: x-large;
+}
+.section-1 .section-1-div .card-list .card .card-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section-1 .section-1-div .card-list .card .card_image {
+  width: 70px;
+  height: auto;
+}
+.section-1 .section-1-div .card-list .card .card_image img {
+  display: flex;
+  margin-left: 5rem;
+  width: 20em;
+  height: auto;
+  border-radius: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-1 .section-1-div .card-list .card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+.section-1 .section-1-div .card-list .title-white {
+  color: white;
+}
+.section-1 .section-1-div .card-list .title-black {
+  color: black;
+}
+@media all and (max-width: 500px) {
+  .section-1 .section-1-div .card-list .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+.section-2 {
+  background: linear-gradient(to right, #3B82F6, #A855F7);
+  width: 100%;
+  height: 50rem;
+}
+.section-2 img {
+  margin-left: 50%;
+  display: flex;
+  position: relative;
+  top: 2rem;
+}
+.section-2 h1 {
+  color: #FFF6F7;
+  margin-left: 35%;
+  display: flex;
+  position: relative;
+  top: 3rem;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.section-2 .animate__zoomIn {
+  animation-name: zoomIn;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.section-2 h2 {
+  color: #FFF6F7;
+  margin-left: 35%;
+  display: flex;
+  position: relative;
+  top: 3rem;
+}
+.section-2 li {
+  color: #FFF6F7;
+  font-size: 1.8rem;
+  margin-left: 10%;
+  display: flex;
+  position: relative;
+  top: 6rem;
+  list-style: none;
+  padding-left: 0;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+.section-2 li::before {
+  content: "✔";
+  color: #2ecc71;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+.section-2 .frame {
+  color: #FFF6F7;
+  margin-left: 60%;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  width: 33rem;
+  height: 15rem;
+  border-radius: 25px;
+}
+.section-2 img {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.section-2 p {
+  align-items: center;
+  color: #A855F7;
+}
+.section-2 h3 {
+  display: flex;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  left: 2.5rem;
+  top: 1rem;
+  font-size: 2rem;
+}
+.section-2 .button {
+  display: flex;
+  position: relative;
+  width: 16rem;
+  height: 3rem;
+  justify-content: center;
+  cursor: pointer;
+  left: 8rem;
+  top: 3rem;
+  font-size: 2rem;
+  border-radius: 45px;
+  color: #FFF6F7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid #388E3C; /* Szegély hozzáadása */
+  background-color: #4CAF50; /* Zöld háttér */
+}
+.section-2 .button .a href {
+  color: #3B82F6;
+}
+
+.section-3 {
+  background-color: #f1c40f;
+  color: #e2e1e1;
+  width: 100%;
+  height: 25rem;
+}
+.section-3 .section-3-div {
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap; /* Ha kicsi az ablak, akkor törje új sorba */
+  gap: 10rem; /* Távolság a gombok között */
+  align-items: center;
+}
+.section-3 .section-3-div h2 {
+  margin-left: 30%;
+  display: flex;
+  position: relative;
+  top: 3rem;
+  font-size: 4rem !important;
+}
+.section-3 .section-3-div .egy, .section-3 .section-3-div .ketto, .section-3 .section-3-div .harom {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px; /* Lekerekített sarkok */
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+.section-3 .section-3-div .egy, .section-3 .section-3-div .ketto, .section-3 .section-3-div .harom:hover {
+  background: #e9ecef;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Erősebb árnyék hoverre */
+}/*# sourceMappingURL=target.css.map */

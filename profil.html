@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/profil.css" />
+    <link rel="stylesheet" href="styles/navigation.css"/>
+    <link rel="stylesheet" href="styles/font.css"/>
+    <link rel="stylesheet" href="styles/footer.css"/>
+    
+
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+    <title>Kalóriasegéd</title>
+    <link rel="Icon" type="jpg" href="assets/images/logo.JPG">
+</head>
+<body>
+  <header class="header"> 
+    <nav class="navbar">
+      <ul>
+          <li class="navbar-item">
+              <a href="index.html" class="nav-link home">
+                <img src="/assets/images/logo.JPG" alt="Kalóriasegéd logó"/>
+                <span>Kalóriasegéd</span>    
+              </a>
+          </li>
+              
+          <li class="navbar-item">
+            <a href="target.html" class="nav-link">
+               Célok
+            </a>
+          <li class="navbar-item">
+              <a href="recept.html" class="nav-link">
+                 Ételek
+              </a>
+          </li>
+          <li class="navbar-item">
+              <a href="statics.html" class="nav-link">
+                Étkezési statisztikák
+              </a>
+                  
+          <li class="navbar-item">
+            <a href="caloria.html" class="nav-link">
+                Kalóriaszámláló
+            </a>
+          </li>
+          <li class="navbar-item">
+              <a href="sport.html" class="nav-link">
+               Sport
+              </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="profil.html" class="nav-link">
+             Profil
+            </a>
+        </li>
+        <li class="navbar-item">
+          <a href="login.html" class="nav-link">
+           Csatlakozás
+          </a>
+      </li>
+      </ul>
+      <div class="hamburgur">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+  </header>
+<body>
+    
+  <div class="container">
+    <h1>Profil Beállítások</h1>
+    <div class="tab-container">
+        <button class="tab-btn" onclick="showContent('personal')">
+            <span>👤</span> Személyes Adatok
+        </button>
+        <button class="tab-btn active" onclick="showContent('bmi')">
+            <span>📋</span> BMI Kalkulátor
+        </button>
+        <button class="tab-btn" onclick="showContent('membership')">
+            <span>💳</span> Tagság
+        </button>
+    </div>
+
+    <div id="personal" class="content">
+        <h2>Személyes Adatok</h2>
+        <div class="input-group">
+            <label>Teljes Név
+                <input type="text" placeholder="">
+            </label>
+            <label>Email
+                <input type="email" placeholder="">
+            </label>
+        </div>
+        <div class="input-group">
+            <label>Telefonszám
+                <input type="text" placeholder="">
+            </label>
+            <label>Születési Dátum
+                <input type="date" placeholder="">
+            </label>
+        </div>
+        <button class="save-btn">💾 Mentés</button>
+    </div>
+
+    <div id="bmi" class="content active">
+        <h2>BMI Kalkulátor</h2>
+        <div class="input-group">
+            <label>Magasság (cm)
+                <input type="number" id="height" placeholder="pl. 175">
+            </label>
+            <label>Súly (kg)
+                <input type="number" id="weight" placeholder="pl. 70">
+            </label>
+        </div>
+        <button class="calculate-btn" onclick="calculateBMI()">⚙️ BMI Számítás</button>
+        <p id="bmi-result"></p>
+    </div>
+
+    <div id="membership" class="content">
+        <h2>Tagság</h2>
+        <div class="membership-plans">
+            <div class="plan">
+                <h3>Alap</h3>
+                <p class="price">2990 <span>Ft/hó</span></p>
+                <ul>
+                    <li>✔ Alapszintű edzéstervek</li>
+                    <li>✔ Korlátozott videók</li>
+                    <li>✔ Email támogatás</li>
+                </ul>
+                <button class="select-btn">Választom</button>
+            </div>
+            <div class="plan recommended">
+                <span class="badge">Ajánlott</span>
+                <h3>Pro</h3>
+                <p class="price">5990 <span>Ft/hó</span></p>
+                <ul>
+                    <li>✔ Teljes videótár</li>
+                    <li>✔ Személyre szabott tervek</li>
+                    <li>✔ 24/7 támogatás</li>
+                    <li>✔ Offline mentés</li>
+                </ul>
+                <button class="select-btn">Választom</button>
+            </div>
+            <div class="plan">
+                <h3>VIP</h3>
+                <p class="price">9990 <span>Ft/hó</span></p>
+                <ul>
+                    <li>✔ Minden Pro funkció</li>
+                    <li>✔ Személyi edző</li>
+                    <li>✔ Prioritás támogatás</li>
+                    <li>✔ Exkluzív tartalmak</li>
+                </ul>
+                <button class="select-btn">Választom</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-col">
+    <h3>Rólunk</h3>
+    <a href="#">BMI Kalkulátor</a>
+    <a href="#">Rólam</a>
+    <a href="contact.html">Kapcsolat felvételi űrlap</a>
+  </div>
+  <div class="footer-col">
+    <h3>Közösségi média</h3>
+    <div class="social-links">
+      <a href="https://www.facebook.com/">Facebook<i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?_escaped_fragment_=/twitter">Twitter<i class="fa fa-twitter"></i></a> <a href="https://www.instagram.com/">Instagram<i class="fa fa-instagram"></i></a> <a href="https://www.linkedin.com/">Linkedin<i class="fa fa-linkedin"></i></a> <a href="https://www.discord.com/">Discord<i class="fa fa-discord"></i></a> </div>
+  </div>
+  <div class="footer-col">
+    <h3>Kapcsolat</h3>
+    <div class="contact-details">
+      <p>Email: kaloriaseged@gmail.com</p>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="keresés az oldalon">
+    </div>
+  </div>
+</footer>
+    
+</body>
+<script src="/scripts/profil.js"></script>
+<script src="/scripts/script.js"></script>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="styles/bmi.css" />
+                <link rel="stylesheet" href="styles/navigation.css"/>
+                <link rel="stylesheet" href="styles/font.css"/>
+            
+                <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"/>
+            
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link
+                  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+                  rel="stylesheet" />
+                <title>Kalóriasegéd</title>
+                <link rel="Icon" type="jpg" href="assets/images/logo.JPG">
+            </head>
+            <body>
+              <header class="header"> 
+                <nav class="navbar">
+                  <ul>
+                      <li class="navbar-item">
+                          <a href="index.html" class="nav-link home">
+                            <img src="/assets/images/logo.JPG" alt="Kalóriasegéd logó"/>
+                            <span>Kalóriasegéd</span>    
+                          </a>
+                      </li>
+                          
+                      <li class="navbar-item">
+                        <a href="target.html" class="nav-link">
+                           Célok
+                        </a>
+                      <li class="navbar-item">
+                          <a href="recept.html" class="nav-link">
+                             Ételek
+                          </a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="statics.html" class="nav-link">
+                            Étkezési statisztikák
+                          </a>
+                              
+                      <li class="navbar-item">
+                        <a href="caloria.html" class="nav-link">
+                            Kalóriaszámláló
+                        </a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="sport.html" class="nav-link">
+                           Sport
+                          </a>
+                      </li>
+            
+                      <li class="navbar-item">
+                        <a href="profil.html" class="nav-link">
+                         Profil
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                      <a href="login.html" class="nav-link">
+                       Csatlakozás
+                      </a>
+                  </li>
+                  </ul>
+                  <div class="hamburgur">
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                  </div>
+              </nav>
+            </head>
+            <body>
+                <!--bmi-->
+<section id="target-section"> <!--use-it-for-scroll--> 
+    <bmi>
+      <h1>BMI Calculator</h1>
+             <div>   class="calculator-container">
+            <form id="bmi-form">
+                <div class="form-group">
+                    <label for="feet">Height (Feet):</label>
+                    <input type="number" id="feet" name="feet" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="inches">Height (Inches):</label>
+                    <input type="number" id="inches" name="inches" min="0" max="11" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" min="0" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="result" class="hidden"></div>
+        </div>
+        <script src="bmi.js"></script>
+      </bmi>
+    </section>
+      
+  <!--footer-starts-from-here-->
+ <footer class="footer">
+  <div class="footer-col">
+    <h3>Rólunk</h3>
+    <a href="#">BMI Kalkulátor</a>
+    <a href="#">Rólam</a>
+    <a href="contact.html">Kapcsolat felvételi űrlap</a>
+  </div>
+  <div class="footer-col">
+    <h3>Közösségi média</h3>
+    <div class="social-links">
+      <a href="https://www.facebook.com/">Facebook<i class="fa fa-facebook"></i></a> <a href="https://twitter.com/?_escaped_fragment_=/twitter">Twitter<i class="fa fa-twitter"></i></a> <a href="https://www.instagram.com/">Instagram<i class="fa fa-instagram"></i></a> <a href="https://www.linkedin.com/">Linkedin<i class="fa fa-linkedin"></i></a> <a href="https://www.discord.com/">Discord<i class="fa fa-discord"></i></a> </div>
+  </div>
+  <div class="footer-col">
+    <h3>Kapcsolat</h3>
+    <div class="contact-details">
+      <p>Email: kaloriaseged@gmail.com</p>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="kereés az oldalon">
+    </div>
+  </div>
+</footer>
+</body>
+<script src="/scripts/script.js"></script>
+</html>  
