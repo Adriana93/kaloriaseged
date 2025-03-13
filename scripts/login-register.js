@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('.form-signup').addEventListener('submit', registerUser);
+});
 async function registerUser(event) {
     event.preventDefault();
 
